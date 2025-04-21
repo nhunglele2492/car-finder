@@ -1,0 +1,19 @@
+@import "tailwindcss/components";
+
+@layer components {
+  .btn {
+    @apply px-6 py-2 inline-block -tracking-tight leading-[150%] rounded transition-all duration-300 ease-in-out;
+  }
+
+  .btn-primary {
+    @apply bg-primary text-white hover:bg-white hover:text-primary border border-primary;
+  }
+
+  .btn-secondary {
+    @apply bg-white text-black hover:bg-primary hover:text-white border border-primary;
+  }
+
+  .nav-link {
+    @apply border-b-4 border-transparent block h-[80px] leading-[80px] transition hover:border-white;
+  }
+}
