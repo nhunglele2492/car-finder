@@ -30,12 +30,11 @@ const AllCar = () => {
   }, []);
 
   let displayedCars = showAll ? cars : cars.slice(0, 8);
-  console.log(cars);
 
   return (
     <div className="container py-12">
       <h3>Popular Cars</h3>
-      <ul className="grid grid-cols-4 gap-16 mb-16 transition-all duration-500 ease-in-out">
+      <ul className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-8 xl:gap-16 mb-8 xl:mb-16 transition-all duration-500 ease-in-out">
         {displayedCars.map((car) => (
           <Card car={car} key={car.id} />
         ))}

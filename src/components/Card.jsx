@@ -7,7 +7,7 @@ import { CiHeart } from "react-icons/ci";
 
 const Card = ({ car }) => {
   return (
-    <li className="py-5 border border-secondary/[0.2] shadow-sm px-4 rounded-md">
+    <li className="py-5 border border-secondary/[0.2] shadow-sm px-4 rounded-md flex flex-col justify-between">
       <div className="flex justify-between items-start mb-10">
         <div className="flex flex-col">
           <h4 className="font-bold">{car.title}</h4>

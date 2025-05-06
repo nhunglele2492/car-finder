@@ -31,7 +31,7 @@ const PopularCar = () => {
   return (
     <div className="container py-12">
       <h3>Popular Cars</h3>
-      <ul className="grid grid-cols-4 gap-16">
+      <ul className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-8 xl:gap-16">
         {cars.map((car, index) => (
           <Card car={car} key={index} />
         ))}

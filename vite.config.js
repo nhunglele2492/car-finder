@@ -8,3 +8,10 @@ export default defineConfig({
     port: 3000,
   },
 });
+
+// vite.config.js or main entry
+import { webcrypto } from "crypto";
+
+if (!globalThis.crypto) {
+  globalThis.crypto = webcrypto;
+}
